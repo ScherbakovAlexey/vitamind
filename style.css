@@ -120,6 +120,7 @@ header{
 
 #menu a {
     color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em #3C3D41;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
@@ -127,6 +128,7 @@ header{
 }
 #menu a:hover{
     color: #3C3D41;
+    text-shadow: 1px 1px 2px transparent, 0 0 1em transparent;
 }
 
 #menu li:last-child{
@@ -247,6 +249,7 @@ background: white;
     letter-spacing: 10px;
     padding: 35px;
     font-weight: 800;
+    text-shadow: 1px 1px 2px white, 0 0 1em grey;
 }
 
 @media (min-width: 768px){
@@ -310,7 +313,7 @@ background: white;
 .clear{
     clear: both;
 }
-blockquote {
+.about blockquote {
 margin: 0;
 background: rgba(242, 242, 99, 0.8);/*#F2F263;*/
 color: #3C3D41;
@@ -319,7 +322,7 @@ position: relative;
     border-radius: 5px;
 /*font-family: 'Lato', sans-serif;*/
 }
-blockquote:before {
+.about blockquote:before {
 content: "\201C";
 /*font-family: serif;*/
 position: absolute;
@@ -335,7 +338,7 @@ font-size: 40px;
 text-align: center;
 line-height: 50px;
 }
-blockquote:after {
+.about blockquote:after {
 content: "";
 width: 3px;
 background: white;
@@ -344,12 +347,12 @@ left: 50px;
 top: 20px;
 bottom: 20px;
 }
-blockquote p {
+.about blockquote p {
 margin-top: 0;
 /*font-size: 24px;
 font-weight: 300;*/
 }
-blockquote cite {
+.about blockquote cite {
 font-style:italic;
 /*text-transform: uppercase;*/
 }
@@ -357,13 +360,13 @@ font-style:italic;
 .tours{
     text-align: center;
     margin-top: 50px;
-    
 }
 .tours-tours,.tours-tickets,.tours-hotels,.tours-cruises{
     max-width: 215px;
     display: inline-block;
    /* border: solid 1px red;*/
     padding: 10px;
+    margin-bottom: 10px;
 }
 .tours1,.tours2{
 display: inline-block;
@@ -411,6 +414,282 @@ display: inline-block;
     
 }
 
+.tours-img{
+   /* padding: 30px;*/
+    position: relative;
+   /* border: solid 1px blue;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+   /* color: transparent;*/
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 30px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #3C3D41;
+}
+/*.tours-img:hover{
+    color: white;
+}*/
+.tours-img-left{
+   /* float: left;*/
+    width: 30%;
+    /*display: inline-block;*/
+   /* border: solid 1px orange;*/
+    padding: 10px;
+    position: relative;
+}
+.tours-img-right{
+   /* float: right;*/
+    width: 30%;
+    /*display: inline-block;*/
+    padding: 10px;
+    position: relative;
+}
+.tours-img-center{
+    width: 30%;
+    /*display: inline-block;*/
+    /*position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;*/
+  /*  border: solid 1px green;*/
+}
+.tours-img-center-top{
+  /* position: absolute;*/
+  /* top: 0px;*/
+    margin-bottom: 10%;
+    position: relative;
+}
+.tours-img-center-bottom{
+  /*  position: absolute;*/
+  /*  bottom: 0px;*/
+    margin-top:10%;
+   /* border: solid 1px red;*/
+    position: relative;
+}
+.tours-img-text{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.reviews{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgba(60,61,65,0.9); /*rgba(242, 242, 98, 0.8);*/
+    color: white;/*#3C3D41;*/
+    border-radius: 10px;
+    /*min-height: 330px;*/
+}
+.reviews h2{
+    padding: 10px;
+}
+.reviews p{
+    padding: 10px;
+}
+.reviews-left{
+    float: left;
+    width: 40%;
+}
+.reviews-right{
+    float: right;
+    width: 60%;
+    position: relative;
+    /*border: solid 1px red;*/
+}
+
+.reviews blockquote {
+margin: 0;
+background: rgba(242, 242, 99, 0.8);/*#F2F263;*/
+color: #3C3D41;
+padding: 30px 30px 30px 90px;
+position: relative;
+    border-radius: 5px;
+/*font-family: 'Lato', sans-serif;*/
+}
+.reviews blockquote:before {
+content: "\201C";
+/*font-family: serif;*/
+position: absolute;
+top: 20px;
+left: 16px;
+color: #3C3D41;
+/*width: 40px;
+height: 40px;
+border-radius: 50%;
+background: white;*/
+font-size: 40px;
+/*font-weight: bold;*/
+text-align: center;
+line-height: 50px;
+}
+/*.reviews blockquote:after {
+content: "";
+width: 3px;
+background: white;
+position:absolute;
+left: 50px;
+top: 20px;
+bottom: 20px;
+}*/
+.reviews blockquote p {
+margin-top: 0;
+/*font-size: 24px;
+font-weight: 300;*/
+}
+.reviews blockquote cite {
+font-style:italic;
+/*text-transform: uppercase;*/
+}
+.reviews-quote{
+    padding: 10px;
+}
+.reviews-img{
+    padding: 10px;
+    background-image: url(tst-images/img8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px 8px rgba(60,61,65,0.9) inset;
+    width: auto;
+    height: 290px;
+}
+
+
+.contacts{
+    margin-top: 50px;
+    padding: 10px;
+    /*background-color: rgba(60,61,65,0.9);*/ /*rgba(242, 242, 98, 0.8);*/
+    color: white;/*#3C3D41;*/
+    /*border-radius: 10px;*/
+    /*min-height: 330px;*/
+    /*border: solid 1px red;*/
+    text-shadow: 1px 1px 2px black, 0 0 1em #3C3D41;
+}
+.contacts h2{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+     background-size: 100% 2px, 100% 2px, auto;
+        background-position: 50% 100%, 50% 100%, 50% 0;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-origin: padding-box, border-box, padding-box;
+        border-bottom: 1px solid transparent;
+/*        padding: 20px;
+        margin: 0 50px;*/
+        list-style: none;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.25);
+        text-align: center;
+        
+        background-image: 
+            -webkit-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.3) 50%, rgba(0,0,0,0)), 
+            -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
+            -webkit-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+        background-image: 
+            -moz-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
+            -moz-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
+            -moz-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+        background-image: 
+            -ms-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
+            -ms-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
+            -ms-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+        background-image: 
+            -o-linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
+            -o-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
+            -o-radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+        background-image: 
+            linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)), 
+            linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.8) 50%, rgba(255,255,255,0)), 
+            radial-gradient(50% 100%, ellipse cover, rgba(0,0,0, 0.05), rgba(0,0,0,0) 50%);
+}
+.contacts p{
+    padding: 10px;
+}
+.contacts a{
+    color: white;
+}
+.contacts-left{
+    float: left;
+    width: 50%;
+  /*  border: solid 1px blue;*/
+}
+.contacts-right{
+    float: right;
+    width: 50%;
+    position: relative;
+  /*  border: solid 1px green;*/
+}
+.contacts-office-img{
+ display: inline-block;
+ font-size: 24px;
+ /*color: rgba(242, 242, 99, 0.8);*/
+  /*  border: solid 1px coral;*/
+        line-height: 50px;
+vertical-align: middle;
+    padding-top: 5px;
+}
+.contacts-office-txt{
+ display: inline-block;
+    line-height: 20px;
+   /* border: solid 1px yellow;*/
+        line-height: 25px;
+vertical-align: middle;
+}
+.contacts-vk-img{
+ display: inline-block;
+ font-size: 24px;
+ /*color: rgba(242, 242, 99, 0.8);*/
+ /*   border: solid 1px coral;*/
+    line-height: 50px;
+vertical-align: middle;
+    padding-top: 5px;
+}
+.contacts-vk-txt{
+ display: inline-block;
+    line-height: 50px;
+   /* border: solid 1px yellow;*/
+vertical-align: middle;
+}
+.contacts-tel-img{
+ display: inline-block;
+ font-size: 24px;
+ /*color: rgba(242, 242, 99, 0.8);*/
+  /*  border: solid 1px coral;*/
+        line-height: 50px;
+vertical-align: middle;
+    padding-top: 5px;
+}
+.contacts-tel-txt{
+ display: inline-block;
+    line-height: 20px;
+   /* border: solid 1px yellow;*/
+        line-height: 17px;
+vertical-align: middle;
+}
+.contacts-social{
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 20px;
+}
+.contacts-social a{
+    display: inline-block;
+    margin-left: 8px;
+   /* color: #F8B763;
+    width: 25px;
+    height: 25px;*/
+    background-color: rgba(60,61,65,1);
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    /*border: 1px solid;*/
+}
+.contacts-office,.contacts-vk,.contacts-tel{
+    display: block;
+    vertical-align: middle;
+}
 .other{
     margin-top: 20px;
 }
@@ -446,13 +725,14 @@ display: inline-block;
 .more-link{
     position: relative;
     display: inline-block;
+    float: right;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     color: #3C3D41;
     line-height: 44px;
     padding: 0 22px;
-    background: #F2F263;
+    background: rgba(242, 242, 99, 0.8);
     letter-spacing: 0.1em;
     white-space: nowrap;
     border-radius: 22px;
@@ -462,7 +742,7 @@ display: inline-block;
     background: #3C3D41;
 }
 .more-link-wrap{
-    margin: 20px;
+    margin: 10px;
 }
 /*.more-link:after{
     content: '';
@@ -523,15 +803,37 @@ display: inline-block;
 }
 
 footer{
-    padding: 30px 0;
-    margin: 30px 0 0 0;
+    /*padding: 30px 0;*/
+    /*margin: 10px 0 0 0;*/
     background: rgba(60,61,65,0.5);/*#3C3D41;*/
     color: white;
   /*  position: fixed;*/
     bottom: 0;
     right: 0;
     left: 0;
+    line-height: 50px;
     /*width: 100%;*/
+    text-align: center;
+}
+.footer-txt{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.footer-txt-with{
+    display: inline-block;
+}
+.footer-txt-love{
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+}
+.footer-txt-vitamind{
+    display: inline-block;
+    margin-left: 28px;
+    font-family: Qiber;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .footer-col{
     width: 33.3333%;
@@ -547,8 +849,8 @@ footer{
     text-align: center;
 }
 .social-bar-wrap a{
-    padding:  0 7px;
-    font-size: 18px;
+    padding:  5px;
+    font-size: 24px;
 }
 
 @media (max-width: 768px){
@@ -582,6 +884,38 @@ header{
         width: 100%;
         float: none;
     }
+    .tours-img{
+        display:inline-block;
+        position: relative;
+    }
+    .tours-img-left{
+       /* width: 50%;
+        position: absolute;
+        top: 400px;
+        left: 0;*/
+        /*float: left;*/
+        display: none;
+    }
+    .tours-img-right{
+      /*  width: 50%;
+        position: absolute;
+        top: 400px;
+        right: 0;*/
+       /* float: right;*/
+        display: none;
+    }    
+    .tours-img-center{
+        width: 100%;
+
+    }    
+    .reviews-left,.reviews-right{
+        width: 100%;
+        float: none;
+    }        
+    .contacts-left,.contacts-right{
+        width: 100%;
+        float: none;
+    }
     .about{
         min-height: 700px;
     }
@@ -603,6 +937,12 @@ header{
     .try-home{
      letter-spacing: 5px;   
      color: white;
+    }
+    .contacts h3{
+        font-size: 12px;
+    }
+    .contacts-office-txt div{
+        font-size: 12px;
     }
     #searchform{
         float: left;
